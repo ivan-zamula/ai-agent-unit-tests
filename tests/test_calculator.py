@@ -117,3 +117,6 @@ class TestIsPrime:
     def test_is_prime_negative_raises(self):
         with pytest.raises(ValueError):
             is_prime(-5)
+
+
+
