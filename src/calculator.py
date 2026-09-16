@@ -71,3 +71,21 @@ def is_prime(n: int) -> bool:
         if n % i == 0:
             return False
     return True
+
+
+def gcd(a: int, b: int) -> int:
+    """Return the greatest common divisor of a and b.
+
+    Uses the Euclidean algorithm.
+
+    Args:
+        a: First integer.
+        b: Second integer.
+
+    Returns:
+        The greatest common divisor of a and b.
+    """
+    a, b = abs(a), abs(b)
+    while b:
+        a, b = b, a % b
+    return a
